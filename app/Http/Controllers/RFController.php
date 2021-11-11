@@ -9,7 +9,6 @@ class RFController extends Controller
 {
     public function login()
     {
-        $result = DB::select("select * from Pengguna");
-        return view('home', ['pokemons' => $result]);
+        return view('login');
     }
 }

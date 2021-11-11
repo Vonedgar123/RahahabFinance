@@ -1,12 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
+@extends('layout.master')
+@section('content')
 <header class="masthead">
     <div class="container position-relative">
         <div class="row justify-content-center">
             <div class="col-xl-6">
                 <div class="text-center text-white">
                     <!-- Page heading-->
-                    <h1 class="mb-5">Bergabung untuk menikmati akses penuh website !</h1>
+                    <h1 class="mb-5">Generate more leads with a professional landing page!</h1>
                     <!-- Signup form-->
                     <!-- * * * * * * * * * * * * * * *-->
                     <!-- * * SB Forms Contact Form * *-->
@@ -19,14 +19,9 @@
                         <!-- Email address input-->
                         <div class="row">
                             <div class="col">
-                                <input class="form-control form-control-lg is-invalid" id="emailAddress" type="email" placeholder="Email Address" data-sb-validations="required,email" data-sb-can-submit="no">
+                                <input class="form-control form-control-lg" id="emailAddress" type="email" placeholder="Email Address" data-sb-validations="required,email" />
                                 <div class="invalid-feedback text-white" data-sb-feedback="emailAddress:required">Email Address is required.</div>
                                 <div class="invalid-feedback text-white" data-sb-feedback="emailAddress:email">Email Address Email is not valid.</div>
-                            </div>
-                            <div class="col">
-                                <input class="form-control form-control-lg is-invalid" id="password" type="email" placeholder="Password" data-sb-validations="required,email" data-sb-can-submit="no">
-                                <div class="invalid-feedback text-white" data-sb-feedback="emailAddress:required">Password is required.</div>
-                                <div class="invalid-feedback text-white" data-sb-feedback="emailAddress:email">Password is not valid.</div>
                             </div>
                             <div class="col-auto"><button class="btn btn-primary btn-lg disabled" id="submitButton" type="submit">Submit</button></div>
                         </div>
@@ -52,4 +47,4 @@
         </div>
     </div>
 </header>
-</html>
+@endsection

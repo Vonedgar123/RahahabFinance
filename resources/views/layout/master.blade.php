@@ -11,46 +11,26 @@
     </head>
 
     <body>
-        <header class="bg-dark">
-                <div class="text-center">
-
-                </div>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
-                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="#!">Home</a></li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Article</a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="#!">Article 1</a></li>
-                                <li><hr class="dropdown-divider"></li>
-                                <li><a class="dropdown-item" href="#!">Article 2</a></li>
-                                <li><a class="dropdown-item" href="#!">Article 3</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Finance Calculator</a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="#!">Hitungan 1</a></li>
-                                <li><hr class="dropdown-divider"></li>
-                                <li><a class="dropdown-item" href="#!">Hitungan 2</a></li>
-                                <li><a class="dropdown-item" href="#!">Hitungan 3</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
-        </header>
+        <!-- Navigation-->
+        <nav class="navbar navbar-light bg-light static-top">
+            <div class="container">
+                <a class="navbar-brand" href="#!">Start Bootstrap</a>
+                <a class="btn btn-primary" href="#signup">Sign Up</a>
+            </div>
+        </nav>
+        <!-- Masthead-->
+        @yield('content')
 
 
     <main role="main" class="inner cover">
-        @yield('content')
-    </main>
 
+    </main>
+</body>
     <footer class="py-5 bg-dark">
         <div class="container">
             <p class="m-0 text-center text-white">
-                Copyright © Rahahab Finance  {{ date("Y") }}
+                Copyright Â© Rahahab Finance  {{ date("Y") }}
             </p>
         </div>
     </footer>
-    </body>
 </html>
